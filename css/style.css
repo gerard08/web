@@ -89,6 +89,25 @@ body
     display: inline-block;
 }
 
+#TotalPrice
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  background-color: RGB(20, 20, 20);
+}
+#preu
+{
+  text-align: center;
+}
+
+#TotalPrice p
+{
+  font-size: 160%;
+  color: RGB(150, 150, 150);
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -129,10 +148,27 @@ body
 {
     filter: invert(68%) sepia(10%) saturate(7%) hue-rotate(318deg) brightness(91%) contrast(85%);
     width: 50%;
+    height: 60%;
     padding: 2%;
     margin-top: 20%;
     margin-right: -5%;
 }
+
+#carro
+{
+  margin-top: -0.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#carro p
+{
+  margin-top: 40%;
+  font-size: 110%;
+  color: white;
+}
+
 .container{
     margin-top: 10%;
     margin-left: auto;

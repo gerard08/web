@@ -28,9 +28,11 @@
         </div>
         <div style="order: 1; flex-grow: 1" id="carro">
             <img src="../media/carro.png">
+            <p id="nElements"><?php echo(count($_SESSION['cistella'])); ?></p>
         </div>
-        <div style="order: 1; flex-grow: 1" id="nElements">
-            <?php echo(count($_SESSION['cistella'])); ?>
+        <div style="order: 1; flex-grow: 1" id="TotalPrice">
+          <p style="order: 1; flex-grow: 1" id="preu"><?php echo($_SESSION['preu']);?></p>
+          <p style="order: 1; flex-grow: 1">€</p>
         </div>
     </div>
 

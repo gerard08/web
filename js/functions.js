@@ -1,3 +1,4 @@
+
 function mostraInformacio(id){
     $(document).ready(function(){
         $.ajax({url: "../controller/informacioProducte.php?id=" + id, success:
@@ -106,17 +107,4 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-}
-
-function AfegirCistell(pid)
-{
-
-  $(document).ready(function(){
-      $.ajax({url: "../controller/afegirAlCistell.php?pid=" + pid, success:
-              function(result){
-              //  $("#pagina").html(result);
-                  $("#nElements").html(result);
-              }});
-  });
-  return false;
 }

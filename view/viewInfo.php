@@ -9,7 +9,7 @@
         </div>
         <div id="butpreu">
             <p id="precioInfo"> Precio:<?php echo $info['preu'] ?>€ </p>
-            <button id="añadir" onclick="return AfegirCistell(<?php echo $info['id'] ?>)"> Añadir al carro</button>
+            <button id="añadir" onclick="return AfegirCistell(<?php echo $info['id'] ?>, <?php echo $info['preu'] ?>)"> Añadir al carro</button>
         </div>
     </div>
 <?php } ?>
