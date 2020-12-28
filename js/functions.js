@@ -114,7 +114,8 @@ function AfegirCistell(pid)
   $(document).ready(function(){
       $.ajax({url: "../controller/afegirAlCistell.php?pid=" + pid, success:
               function(result){
-                  $("#pagina").html(result);
+              //  $("#pagina").html(result);
+                  $("#nElements").html(result);
               }});
   });
   return false;

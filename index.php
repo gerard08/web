@@ -1,6 +1,9 @@
 <?php
 session_start();
-$_SESSION['cistella'] = array();
+if(!isset($_SESSION['ID']))
+{
+  $_SESSION['cistella'] = array();
+}
 ?>
 
 <html>
