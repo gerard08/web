@@ -1,0 +1,465 @@
+body
+{
+    /*background-color: #1c1c1c;*/
+    background-color: #1c1c1c;
+
+}
+#barraSup
+{
+    /*background-color: RGBA(255,255,255,0.15);*/
+    background: linear-gradient(to top, #1c1c1c, RGBA(255,255,255,0.15));
+    margin-top: -2.3%;
+    margin-left: -0.6%;
+    margin-right: -0.6%;
+    border-bottom: 2px solid black;
+
+}
+
+#menu
+{
+    margin-top: 2%;
+    display: flex;
+    border: 1px solid black;
+}
+
+#logo a img
+{
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 13%;
+}
+
+#cat
+{
+    filter: invert(68%) sepia(10%) saturate(7%) hue-rotate(318deg) brightness(91%) contrast(85%);
+    margin-top: 2%;
+    margin-left: 3%;
+    width: 40px;
+    height: 40px;
+}
+#bar
+{
+    margin-top: 2%;
+    width: 300%;
+    margin-left: 4%;
+
+}
+#bar input
+{
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: RGB(120,120,120);
+    font-size: 150%;
+    color: azure;
+}
+
+::placeholder
+{
+    color: RGB(200,200,200);
+    opacity: 30%;
+    margin-left: 2%;
+}
+
+#bar img
+{
+    filter: invert(68%) sepia(10%) saturate(7%) hue-rotate(318deg) brightness(91%) contrast(85%);
+    width:3%;
+    margin-bottom: -0.5%;
+}
+#user img
+{
+    filter: invert(68%) sepia(10%) saturate(7%) hue-rotate(318deg) brightness(91%) contrast(85%);
+    margin-top: 35%;
+    width: 70%;
+    padding: 10%;
+    margin-left: -120%;
+}
+
+#logedUser img
+{
+    margin-top: 35%;
+    width: 70%;
+    padding: 10%;
+    margin-left: -120%;
+}
+
+#logedUser {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: -150%;
+    background-color: #403f3f;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: ghostwhite;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #242323}
+
+#logedUser:hover .dropdown-content {
+    display: block;
+}
+
+
+#know
+{
+    background-color: #242323;
+    padding-bottom: 20%;
+    padding-top: 10%;
+    margin-top: 0%;
+    font-weight: bold;
+    color: blanchedalmond;
+    font-size: 18px;
+    text-align: center;
+}
+
+#carro img
+{
+    filter: invert(68%) sepia(10%) saturate(7%) hue-rotate(318deg) brightness(91%) contrast(85%);
+    width: 50%;
+    padding: 2%;
+    margin-top: 20%;
+    margin-right: -5%;
+}
+.container{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container tr img{
+    width: 200px;
+    height: 200px;
+}
+
+.container tr p{
+    text-align:center;
+}
+
+#check{
+    display: none;
+}
+
+.checkbox{
+    cursor: pointer;
+}
+
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 1;
+    visibility: hidden;
+}
+
+#check:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#check:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+
+.cont-menu nav{
+    transform: translateY(15%);
+}
+
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #F2F5F4;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background-color: #1F1F1F
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 10%;
+    top: 2%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+#pagina
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#imatge
+{
+    margin-left: 20%;
+    width: 60%;
+}
+
+#casella
+{
+    width: 25%;
+    background-color: RGBA(255,102,102,0.2);
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas:
+  'nom nom nom nom'
+  'img img img img'
+  'img img img img'
+  'preu but but but'
+  'info info info info';
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+#casella:hover
+{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-top: 2.5%;
+    background-color: white;
+    transition: 0.5s;
+    opacity: 70%;
+    border: 2px solid red;
+}
+
+
+#casella:hover #imatge{
+    display: none;
+}
+
+#descripcio{
+    display: none;
+}
+
+#casella:hover #info
+{
+    display: block;
+}
+
+#afegirCarro{
+    background-color: aquamarine;
+    width: 100%;
+}
+
+#casella:hover #descripcio{
+    display: block;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 2%;
+}
+
+
+#Nom
+{
+    text-align: center;
+    margin: 5%;
+    align-self: center;
+    font-size: 20px;
+}
+#Preu
+{
+    margin-left: 20%;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#producte{
+    width: 100%;
+    background-color: white;
+    opacity: 70%;
+    border: 2px solid dodgerblue;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-right: 5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#producte img{
+    width: 30%;
+    height: auto;
+    margin-left: 2%;
+    padding-top: 2%;
+}
+
+#producte #descripcio{
+    padding-top: 5%;
+    margin-left: 30%;
+}
+
+#precioInfo{
+    display: block;
+    vertical-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#añadir{
+    margin-left: 3%;
+    margin-top: 1%;
+    background-color: lightblue;
+}
+
+#butpreu
+{
+    padding-top: 12%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*//////////////////////////////////////////////
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+//////////////////////////////////
+
+#content
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#content img
+{
+  flex-grow: 1;
+}
+
+#content p
+{
+  margin-right: 0px;
+  flex-grow: 1;
+}

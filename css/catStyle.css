@@ -1,0 +1,42 @@
+#categories
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: auto;
+}
+
+#categoria
+{
+  flex-grow: 1;
+  text-align: center;
+  margin: auto;
+  height: 610px;
+  border: 1px solid black;
+}
+
+#categoria:hover
+{
+  width: 10%;
+  transition: 0.5s;
+  background-color: RGB(195,195,195);
+}
+
+#categoria:hover p
+{
+  margin-top: 60%;
+  font-size: 250%;
+  color: black;
+}
+
+#categoria p
+{
+  margin-top: 70%;
+  font-size: 150%;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}

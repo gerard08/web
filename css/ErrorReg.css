@@ -1,0 +1,46 @@
+#errorsReg
+{
+    display:flex;
+    flex-direction: row;
+}
+
+#text
+{
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia;
+    color: azure;
+}
+
+img
+{
+    width: 50%;
+}
+
+#oops
+{
+    align-self: center;
+    font-size: 70px;
+}
+
+#ErrMess
+{
+    margin-top: -10%;
+    align-self: center;
+    font-size: 20px;
+}
+
+#button
+{
+    align-self: center;
+    margin-left: -10%;
+}
+
+#button button
+{
+    align-self: center;
+    width: 150%;
+    height: 150%;
+    border-radius: 20px;
+    opacity: 30%;
+}
