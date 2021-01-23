@@ -20,6 +20,9 @@ function registraUsuari(){
     var correu = document.getElementById("correu").value;
     var contra = document.getElementById("contra").value;
     var contra2 = document.getElementById("contra2").value;
+    var dir = document.getElementById("dir").value;
+    var pob = document.getElementById("pob").value;
+    var cp = document.getElementById("cp").value;
 
 
 
@@ -28,7 +31,10 @@ function registraUsuari(){
                 "&edat=" + edat +
                 "&correu=" + correu +
                 "&contra=" + contra +
-                "&contra2=" + contra2, success:
+                "&contra2=" + contra2 +
+                "&dir=" + dir +
+                "&pob=" + pob +
+                "&cp=" + cp, success:
                 function(result){
                     $("#taulell").html(result);
                 }});
@@ -64,18 +70,6 @@ function iniciaSessio(){
                 }});
     });
     return false;
-}
-
-function logOut(){
-
-    $(document).ready(function(){
-        $.ajax({url: "../controller/tancarsessio.php", success:
-                function(result){
-                    //$("#pagina").html(result);
-                }});
-    });
-    location.reload();
-    return true;
 }
 
 

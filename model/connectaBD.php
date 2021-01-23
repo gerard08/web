@@ -1,8 +1,8 @@
 <?php
     function connectaBD(){
         $servidor = "localhost";
-        $usuari = "root";//@localhost";
-        $clau = "gerard11";
+        $usuari = "tdiw-c9";//@localhost";
+        $clau = "6oCefozW";
         $dbname = "tdiwc9";
 
         try {

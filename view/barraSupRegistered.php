@@ -20,14 +20,16 @@
         <div style="order: 1; flex-grow: 1" id="logedUser">
             <img src="../media/userLOGED.png" class="boto">
             <div class="dropdown-content">
-                <p id="know">Hola <?php echo $_SESSION['nom'] ?></p>
-                <a> El meu compte </a>
+                <p id="know">Hola <?php echo $_SESSION['nom'] ?>!</p>
+                <a href="?p=userpage"> El meu compte </a>
                 <a> Les meves compres </a>
-                <a onclick="return logOut()"> Tancar sessió </a>
+                <a href="?p=logout"> Tancar sessió </a>
             </div>
         </div>
         <div style="order: 1; flex-grow: 1" id="carro">
-            <img src="../media/carro.png">
+            <a href="?p=carro">
+                <img src="../media/carro.png">
+            </a>
             <p id="nElements"><?php echo(count($_SESSION['cistella'])); ?></p>
         </div>
         <div style="order: 1; flex-grow: 1" id="TotalPrice">

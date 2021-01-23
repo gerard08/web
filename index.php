@@ -12,9 +12,10 @@ if(!isset($_SESSION['ID']))
     <link rel="icon" type="image/ico" href="/media/iconWite.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/functions.js"> </script>
-    <?php include_once __DIR__ . '../js/funcionsN.php'; ?>
+    <?php include_once __DIR__ . '/js/funcionsN.php'; ?>
 </head>
 </html>
+
 <?php
 
 if(isset($_GET['p']))
@@ -29,20 +30,31 @@ else
 
 switch($action)
 {
-    /*case 'portatils':
-    {
-        include_once __DIR__ . '/view/portatiles.php';
-        break;
-    }*/
     case 'login':
     {
-        include_once __DIR__ . '/view/register.php';
+        include_once __DIR__ . '/res_register.php';
         break;
+    }
+    case 'logout':
+    {
+        session_destroy();
+        $action = '';
+        echo "<script>window.location = '/?p='</script>";
     }
     case 'categoria':
     {
-      include_once __DIR__ . '/view/categories.php';
+      include_once __DIR__ . '/res_categories.php';
       break;
+    }
+    case 'carro':
+    {
+        include_once  __DIR__ . '/res_carro.php';
+        break;
+    }
+    case 'userpage':
+    {
+        include_once  __DIR__ . '/res_userMod.php';
+        break;
     }
     default:
     {

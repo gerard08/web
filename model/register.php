@@ -1,12 +1,12 @@
 <?php
 
-function registraUsuari($connexio, $nom, $edat, $contra, $correu)
+function registraUsuari($connexio, $nom, $edat, $contra, $correu,  $direccio, $poblacio, $codipost)
 {
 $res = false;
 try
     {
-        $query = "INSERT INTO Usuari (nom, dataNaixement, contrasenya, correu, direccio, DNI)";
-        $query .= "VALUES('$nom', '$edat', '$contra', '$correu', 'NULL', 'NULL')";
+        $query = "INSERT INTO Usuari (nom, dataNaixement, contrasenya, correu, direccio, poblacio, CodiPostal, DNI)";
+        $query .= "VALUES('$nom', '$edat', '$contra', '$correu', '$direccio', '$poblacio', '$codipost', 'NULL')";
         $consulta = $connexio->prepare($query);
         $consulta->execute();
         #echo "usuari afegit";

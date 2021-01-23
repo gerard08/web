@@ -162,11 +162,19 @@ body
   flex-wrap: wrap;
 }
 
-#carro p
+/*#carro p*/
+/*{*/
+/*  margin-top: 40%;*/
+/*  font-size: 110%;*/
+/*  color: white;*/
+/*}*/
+
+#nElements
 {
-  margin-top: 40%;
-  font-size: 110%;
-  color: white;
+    margin-top: -18%;
+    margin-left: 26%;
+    font-size: 110%;
+    color: white;
 }
 
 .container{

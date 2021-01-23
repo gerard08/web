@@ -23,7 +23,9 @@
             </a>
         </div>
         <div style="order: 1; flex-grow: 1" id="carro">
-            <img src="../media/carro.png">
+            <a href="?p=carro">
+                <img src="../media/carro.png">
+            </a>
         </div>
     </div>
 
