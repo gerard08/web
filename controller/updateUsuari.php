@@ -1,5 +1,8 @@
 <?php
-session_start();
+if(!isset($SESSION['ID']))
+{
+    session_start();
+}
 $nom = $_POST["nom"];
 $edat = $_POST["edat"];
 $correu = $_POST["correu"];
@@ -11,9 +14,9 @@ $num = $_POST["num"];
 $dni = $_POST["dni"];
 
 $id = $_SESSION['ID'];
-var_dump($id);
+//var_dump($id);
 $filesAbsolutePath = '/home/TDIW/tdiw-c9/public_html/media/users/';
-$filesPublicPath = '/../media/users/';
+$filesPublicPath = '/media/users/';
 
 $photo = '/media/noPhoto.jpg';
 

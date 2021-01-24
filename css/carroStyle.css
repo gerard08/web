@@ -1,11 +1,75 @@
 #cuadroCarro{
     background-color: white;
     opacity: 75%;
-    height: 60%;
+    height: auto;
     width: 80%;
     margin-top: 7%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 7%;
+    border-color: red;
+    border-width: medium;
+    border-radius: 10px;
+}
+
+#vacio{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+h1{
+    padding-left: 5%;
+    padding-top: 2%;
+    font-family: "Arial Black";
+}
+
+h2{
+    padding-left: 3%;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#cuadroCarro p{
+    margin-left: 5%;
+    font-size:150%;
+}
+
+#cprodCant{
+    margin-left: 100%;
+    font-size:100%;
+}
+
+#cuadroCarro img{
+    margin-left: 5%;
+    width: 200px;
+}
+
+hr{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+button{
+
     border-radius: 5px;
+    width: 30%;
+    height: 5%;
+    background-color: red;
+    opacity: 60%;
+    font-weight: bold;
+}
+
+#btvaciar{
+    margin-left: 3%;
+    margin-bottom: 1%;
+}
+
+#btcomprar{
+    margin-left: 33%;
+    margin-bottom: 1%;
 }
 

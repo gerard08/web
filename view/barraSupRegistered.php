@@ -40,9 +40,9 @@
                     $name=explode(" ",$_SESSION['nom']);
                     echo $name[0];
                     ?>!</p>
-                <a href="?p=userpage"> El meu compte </a>
-                <a> Les meves compres </a>
-                <a href="?p=logout"> Tancar sessió </a>
+                <a href="?p=userpage"> Mi cuenta </a>
+                <a href="?p=history"> Mis compras </a>
+                <a href="?p=logout"> Cerrar sesión </a>
             </div>
         </div>
         <div style="order: 1; flex-grow: 1" id="carro">

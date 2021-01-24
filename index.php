@@ -12,6 +12,12 @@ $filesAbsolutePath = '/home/TDIW/tdiw-c9/public_html/media/users/';
 
 ?>
 
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+
 <html>
 <head>
     <link rel="icon" type="image/ico" href="/media/iconWite.ico" />
@@ -59,6 +65,11 @@ switch($action)
     case 'userpage':
     {
         include_once  __DIR__ . '/res_userMod.php';
+        break;
+    }
+    case 'history':
+    {
+        include_once __DIR__ . '/res_userhistory.php';
         break;
     }
     default:

@@ -2,7 +2,7 @@
 session_start();
 function updateUsuari($connexio, $nom, $edat, $contra, $correu,  $direccio, $poblacio, $codipost, $num, $dni, $photo)
 {
-    var_dump($photo);
+    //var_dump($photo);
     $id = $_SESSION['ID'];
     $res = false;
     try
