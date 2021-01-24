@@ -1,4 +1,7 @@
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/barraSup.css"/>
+</head>
 <header id="barraSup">
     <div id="menu">
         <div style="order: 1; flex-grow: 1" id="cat" >
@@ -23,7 +26,7 @@
             </a>
         </div>
         <div style="order: 1; flex-grow: 1" id="carro">
-            <a href="?p=carro">
+            <a href="?p=login">
                 <img src="../media/carro.png">
             </a>
         </div>

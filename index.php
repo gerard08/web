@@ -4,7 +4,12 @@ if(!isset($_SESSION['ID']))
 {
   $_SESSION['cistella'] = array();
   $_SESSION['preu'] = 0;
+  $_SESSION['nProd'] = 0;
+  $_SESSION['totalProductes']=0;
 }
+
+$filesAbsolutePath = '/home/TDIW/tdiw-c9/public_html/media/users/';
+
 ?>
 
 <html>

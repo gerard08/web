@@ -12,7 +12,7 @@
     <!--<script type="text/javascript" src="funcions.js"> </script>-->
 </head>
 <body>
-<?php include_once __DIR__ . "/controller/mostrarBarraSup.php" ?>
+<?php include_once __DIR__ . "/controller/mostrarBarraSup.php"; ?>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">

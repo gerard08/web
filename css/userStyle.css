@@ -1,6 +1,67 @@
-#profilePicture
+#back
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#imatge
 {
     width: 20%;
-    border-radius: 50%;
     margin: 10%;
+}
+
+#inputP
+{
+    margin-top: 5%;
+    margin-left: -20%;
+}
+
+#profilePicture
+{
+    width: 110%;
+    border-radius: 50%;
+    margin-left: -10%;
+}
+
+#caselles
+{
+    margin-top: 10%;
+    width: 60%;
+    display: grid;
+    margin-right: -1%;
+    margin-left: -3%;
+    grid-template-areas:
+  'nom nom mail mail mail mail mail'
+  'data data pass pass pass pass pass'
+  'cp pob dir dir dir dir dir'
+  'dni dni num num num num num'
+  'but but but but but but but'
+}
+
+#caselles input
+{
+    padding: 2%;
+    /*margin: 2%;*/
+    border-radius: 20px;
+    opacity: 50%;
+    height: 45%;
+    width: 100%;
+}
+
+::placeholder {
+    color: RGBA(0,0,0,0.6);
+    opacity: 1; /* Firefox */
+}
+
+#caselles button
+{
+    background-color: gray;
+    opacity: 0.6;
+    border-radius: 10px;
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
 }

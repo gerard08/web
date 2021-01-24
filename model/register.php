@@ -5,8 +5,8 @@ function registraUsuari($connexio, $nom, $edat, $contra, $correu,  $direccio, $p
 $res = false;
 try
     {
-        $query = "INSERT INTO Usuari (nom, dataNaixement, contrasenya, correu, direccio, poblacio, CodiPostal, DNI)";
-        $query .= "VALUES('$nom', '$edat', '$contra', '$correu', '$direccio', '$poblacio', '$codipost', 'NULL')";
+        $query = "INSERT INTO Usuari (nom, dataNaixement, contrasenya, correu, direccio, poblacio, CodiPostal, fotoPerfil)";
+        $query .= "VALUES('$nom', '$edat', '$contra', '$correu', '$direccio', '$poblacio', '$codipost', '/media/noPhoto.jpg')";
         $consulta = $connexio->prepare($query);
         $consulta->execute();
         #echo "usuari afegit";

@@ -102,3 +102,66 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+function updateUsuari(){
+
+    var nom = document.getElementById("unom").value;
+    var edat = document.getElementById("uedat").value;
+    var correu = document.getElementById("ucorreu").value;
+    var contra = document.getElementById("ucontra").value;
+    var dir = document.getElementById("udir").value;
+    var pob = document.getElementById("upob").value;
+    var cp = document.getElementById("ucp").value;
+    var num = document.getElementById("unum").value;
+    var dni = document.getElementById("udni").value;
+
+
+
+
+    $(document).ready(function(){
+        $.ajax({url: "../controller/updateUsuari.php?nom=" + nom +
+                "&edat=" + edat +
+                "&correu=" + correu +
+                "&contra=" + contra +
+                "&dir=" + dir +
+                "&pob=" + pob +
+                "&cp=" + cp +
+                "&num=" + num +
+                "&dni=" + dni, success:
+                function(result){
+                   // $("body").html(result);
+                }});
+    });
+    return true;
+}
+
+function confirmarCompra(uid, nElem, preu){
+    $(document).ready(function(){
+        //$("#muestraportatiles").change(function(){
+        $.ajax({url: "../controller/confirmaCompra.php?id=" + uid +
+                "&nElements=" + nElem +
+                "&precio=" + preu, success:
+                function(result){
+                    //$("#cuadroCarro").html(result);
+                }});
+        // });
+    });
+    $(document).ready(function(){
+        $.ajax({url: "../controller/mostrarResum.php?", success:
+                function(result){
+                    //  $("#pagina").html(result);
+                    $("#cuadroCarro").html(result);
+                }});
+    });
+    $(document).ready(function(){
+        $.ajax({url: "../controller/eliminarCistell.php?", success:
+                function(result){
+                    //  $("#pagina").html(result);
+                    //$("#cuadroCarro").html(result);
+                    $("#nElements").html("0");
+                    $("#preu").html("0");
+                }});
+    });
+
+
+}

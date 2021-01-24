@@ -1,12 +1,12 @@
 <?php
-$nom = $_GET["nom"];
-$edat = $_GET["edat"];
-$correu = $_GET["correu"];
-$contra = $_GET["contra"];
-$contra2 = $_GET["contra2"];
-$direccio = $_GET["dir"];
-$poblacio = $_GET["pob"];
-$codipost = $_GET["cp"];
+$nom = $_POST["nom"];
+$edat = $_POST["edat"];
+$correu = $_POST["correu"];
+$contra = $_POST["contra"];
+$contra2 = $_POST["contra2"];
+$direccio = $_POST["dir"];
+$poblacio = $_POST["pob"];
+$codipost = $_POST["cp"];
 
 
 include_once __DIR__ . '/../model/consultacorreu.php';
@@ -40,8 +40,10 @@ else
         $_SESSION['ID'] = $result[0]['id'];
 
         echo "<script>window.location = '/?p='</script>";
-        return false;
+        return;
     }
+    echo "<script>window.location = '/?p=login'</script>";
+    return;
 }
 
 

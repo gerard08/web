@@ -10,24 +10,17 @@
     <meta name="=viewport" content="width=device-width; initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="/css/carroStyle.css"/>
-    <script type="text/javascript" src="/js/functions.js"> </script>
+    <script type="text/javascript" src="/js/funcionsCarro.js"> </script>
+<!--    <script type="text/php" src="/js/functionsN.php"> </script>-->
 </head>
 <body>
 
 <?php
-include_once __DIR__ . "/controller/mostrarBarraSup.php";?>
+include_once __DIR__ . "/controller/mostrarBarraSup.php";
+//include_once __DIR__ . "/js/funcionsN.php";
+?>
 
-<div id="cuadroCarro">
-    <?php if(!empty($_SESSION['cistella'])){ ?>
-
-        <?php  include_once  __DIR__ . "/controller/mostrarCistell.php"?>
-
-    <?php } else { ?>
-        <p> CARRO VACÍO </p>
-    <?php } ?>
-
-</div>
-
+<?php  include_once  __DIR__ . "/controller/mostrarCistell.php"?>
 
 
 

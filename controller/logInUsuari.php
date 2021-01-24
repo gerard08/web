@@ -1,6 +1,6 @@
 <?php
-$correu = $_GET["correu"];
-$contra = $_GET["contra"];
+$correu = $_POST["correu"];
+$contra = $_POST["contra"];
 
 //$contra = password_hash($contra, PASSWORD_DEFAULT);
 

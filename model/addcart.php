@@ -2,7 +2,12 @@
 function afegir($element)
 {
   array_push($_SESSION['cistella'], $element);
-  echo (count($_SESSION['cistella']));
+  $_SESSION['totalProductes']= $_SESSION['totalProductes']+1;
+
+  echo count($_SESSION['cistella']);
+
 }
 
 ?>
+
+
